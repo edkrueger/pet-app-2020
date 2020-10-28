@@ -30,7 +30,7 @@ db.create_all()
 
 @app.route("/")
 def main():
-    "The app is up!"
+    return "The app is up!"
 
 @app.route("/add_pet", methods=["POST"])
 def add_pet():
